@@ -1,0 +1,22 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-3.0.2",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "route": "fhirproxy/{res?}/{id?}/{hist?}/{vid?}",
+      "methods": [
+        "get",
+        "post",
+        "put",
+        "patch",
+        "delete"
+      ],
+      "authLevel": "anonymous",
+      "name": "req"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/FHIRProxy.dll",
+  "entryPoint": "FHIRProxy.ProxyFunction.Run"
+}
